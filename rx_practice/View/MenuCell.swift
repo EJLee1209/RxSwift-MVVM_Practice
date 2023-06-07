@@ -8,8 +8,6 @@
 import UIKit
 import RxCocoa
 class MenuCell: UITableViewCell {
-
     static let identifier = "menuCell"
     @IBOutlet weak var title: UILabel!
-    
 }

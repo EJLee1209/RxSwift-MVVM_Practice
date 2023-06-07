@@ -26,6 +26,8 @@
 		CFF382AF2A3047D900BFB9F3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF382AE2A3047D900BFB9F3 /* ApiError.swift */; };
 		CFF382B12A30480300BFB9F3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF382B02A30480300BFB9F3 /* UserViewModel.swift */; };
 		CFF382B32A30548F00BFB9F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF382B22A30548F00BFB9F3 /* Extensions.swift */; };
+		CFF382B62A305CED00BFB9F3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF382B52A305CED00BFB9F3 /* AlertViewController.swift */; };
+		CFF382B82A3060C000BFB9F3 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF382B72A3060C000BFB9F3 /* AlertViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		CFF382AE2A3047D900BFB9F3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		CFF382B02A30480300BFB9F3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CFF382B22A30548F00BFB9F3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFF382B52A305CED00BFB9F3 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		CFF382B72A3060C000BFB9F3 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				CFF382912A30066400BFB9F3 /* CounterViewModel.swift */,
 				CFF382B02A30480300BFB9F3 /* UserViewModel.swift */,
+				CFF382B72A3060C000BFB9F3 /* AlertViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				CFF3827C2A3004DA00BFB9F3 /* CounterViewController.swift */,
 				CFF382932A301BA600BFB9F3 /* RootViewController.swift */,
 				CFF382A72A3043DF00BFB9F3 /* UserViewController.swift */,
+				CFF382B52A305CED00BFB9F3 /* AlertViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				CFF382A62A30429600BFB9F3 /* UserCell.swift in Sources */,
 				CFF382A82A3043DF00BFB9F3 /* UserViewController.swift in Sources */,
 				CFF382AD2A30456100BFB9F3 /* UserRepositoryImpl.swift in Sources */,
+				CFF382B82A3060C000BFB9F3 /* AlertViewModel.swift in Sources */,
 				CFF382B32A30548F00BFB9F3 /* Extensions.swift in Sources */,
 				CFF3829A2A30220600BFB9F3 /* MenuItem.swift in Sources */,
 				CFF382942A301BA600BFB9F3 /* RootViewController.swift in Sources */,
@@ -259,6 +266,7 @@
 				CFF382B12A30480300BFB9F3 /* UserViewModel.swift in Sources */,
 				CFF3827B2A3004DA00BFB9F3 /* SceneDelegate.swift in Sources */,
 				CFF382AA2A3044B700BFB9F3 /* User.swift in Sources */,
+				CFF382B62A305CED00BFB9F3 /* AlertViewController.swift in Sources */,
 				CFF382A42A30285600BFB9F3 /* MenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

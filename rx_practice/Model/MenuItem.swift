@@ -14,6 +14,7 @@ struct MenuItem {
         return [
             MenuItem(title: "Number Counter"),
             MenuItem(title: "NetWorking With MockApi(GET)"),
+            MenuItem(title: "Alert")
         ]
     }
 }

@@ -36,6 +36,8 @@ class RootViewController: UIViewController {
                         self.performSegue(withIdentifier: "RootToCounter", sender: nil)
                     case "NetWorking With MockApi(GET)":
                         self.performSegue(withIdentifier: "RootToUser", sender: nil)
+                    case "Alert":
+                        self.performSegue(withIdentifier: "RootToAlert", sender: nil)
                     default:
                         break
                     }

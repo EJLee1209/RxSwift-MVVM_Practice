@@ -13,12 +13,4 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var genderImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    
-//    init() {
-//        super.init(style: .default, reuseIdentifier: UserCell.identifier)
-//    }
-//    
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//    }
 }

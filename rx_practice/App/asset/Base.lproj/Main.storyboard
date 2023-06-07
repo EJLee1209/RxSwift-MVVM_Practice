@@ -22,14 +22,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="5tG-F4-erv" customClass="MenuCell" customModule="rx_practice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5tG-F4-erv" id="4DZ-QQ-toh">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-NA-Yzo">
-                                                    <rect key="frame" x="35" y="11.000000000000002" width="323" height="20.666666666666671"/>
+                                                    <rect key="frame" x="35" y="10.999999999999998" width="323" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -63,6 +63,7 @@
                         <outlet property="tableView" destination="0Di-XW-dbU" id="95v-Cb-4En"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="RootToCounter" id="6sR-X9-8v5"/>
                         <segue destination="L2r-cE-sBQ" kind="show" identifier="RootToUser" id="d1V-Ze-QUN"/>
+                        <segue destination="KTg-ch-xHp" kind="show" identifier="RootToAlert" id="eP3-Q9-HVl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfu-8k-qXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,6 +156,48 @@
             </objects>
             <point key="canvasLocation" x="1148.854961832061" y="163.38028169014086"/>
         </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="T3V-hb-7JB">
+            <objects>
+                <viewController id="KTg-ch-xHp" customClass="AlertViewController" customModule="rx_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xha-lg-N6r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t9J-Fg-HsS">
+                                <rect key="frame" x="166.33333333333334" y="382.33333333333331" width="60.333333333333343" height="87.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpW-p6-ycC">
+                                        <rect key="frame" x="19" y="0.0" width="22.333333333333329" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coa-bL-vFv">
+                                        <rect key="frame" x="0.0" y="53" width="60.333333333333336" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Alert"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YdR-le-4ae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t9J-Fg-HsS" firstAttribute="centerY" secondItem="Xha-lg-N6r" secondAttribute="centerY" id="18S-Zc-NLl"/>
+                            <constraint firstItem="t9J-Fg-HsS" firstAttribute="centerX" secondItem="Xha-lg-N6r" secondAttribute="centerX" id="Zuo-iU-pu1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EGQ-xm-LZj"/>
+                    <connections>
+                        <outlet property="alertBtn" destination="coa-bL-vFv" id="vd2-Cf-8gQ"/>
+                        <outlet property="countLabel" destination="OpW-p6-ycC" id="RBD-qo-EcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbf-1L-Cfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="858"/>
+        </scene>
         <!--Counter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -164,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="n0H-5L-yhE">
-                                <rect key="frame" x="109.66666666666669" y="401" width="173.66666666666663" height="50"/>
+                                <rect key="frame" x="109.66666666666667" y="401" width="173.66666666666663" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHB-CS-XOb">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
